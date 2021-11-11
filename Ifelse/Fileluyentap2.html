@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYEN TAP 2</title>
+</head>
+<body>
+<script>
+    // Bai 1
+    // let Celsius = parseFloat(prompt('Nhap vao do C: '));
+    // let Fahrenheit = Celsius * 9/5 + 32;
+    // alert('Do F la: ' + Fahrenheit);
+
+    // Bai 2
+    // let meter = parseFloat(prompt('Nhap vao so met: '));
+    // let feet = meter * 3.2808;
+    // alert('So feet la: ')
+
+    // Bai 3
+    // let side = parseFloat(prompt('Nhap vao canh hinh vuong: '));
+    // let square = side ** 2;
+    // alert('Dien tich hinh vuong la: ' + square);
+
+    // Bai 4
+    // let length = parseFloat(prompt('Nhap vao chieu dai: '));
+    // let width = parseFloat(prompt('Nhap vao chieu rong: '));
+    // let rectangle = length * width;
+    // alert('Dien tich hinh chu nhat la: ' + rectangle);
+    //
+    // // Bai 5
+    // let side1 = parseFloat(prompt('Nhap vao canh goc vuong 1: '));
+    // let side2 = parseFloat(prompt('Nhap vao canh goc vuong 2: '));
+    // let areaTriangle = side1 * side2 * 0.5;
+    // alert('Dien tich tam giac vuong la: ' + areaTriangle);
+    //
+    // Bai 6
+//    ax + b = 0
+//     let num1 = +prompt('Nhap vao so thu nhat: ');
+//     let num2 = +prompt('Nhap vao so thu hai: ');
+//     if (num1 === 0) {
+//         if (num2 === 0){
+//             alert('Phuong trinh vo so nghiem');
+//         } else  {
+//             alert('phuong trinh vo nghiem');
+//         }
+//     } else {
+//         let x = - (num2 / num1).toFixed(2);
+//         alert('Phuong trinh co nghiem la: ' + x);
+//     }
+// Bai 8
+//     let age = +prompt('Nhap vao so tuoi: ');
+//     if (age > 0 && age < 120) {
+//         if (age % 1 === 0){
+//             alert('La tuoi cua mot nguoi');
+//         } else {
+//             alert('Khong phu hop');
+//         }
+//     }
+//     Bai 9
+//     let a = +prompt('Nhap vao canh 1 cua tam giac: ');
+//     let b = +prompt('Nhap vao canh 2 cua tam giac: ');
+//     let c = +prompt('Nhap vao canh 3 cua tam giac: ');
+//     if (a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && a + c > b) {
+//         alert('a, b, c la 3 canh cua tam giac')
+//     } else {
+//         alert('a, b, c khong phai 3 canh cua tam giac');
+//     }
+//
+//     Bai 10
+//     let elec = +prompt('Nhap vao so dien tieu thu trong thang');
+//     let price1 = 1500;
+//     let price2 = 2000;
+//     let price3 = 3000;
+//     if (elec > 0) {
+//         if (elec <= 50){
+//             alert('So tien dien trong thang la: ' + elec * price1);
+//         }
+//         else if (elec <= 100) {
+//             alert('So tien dien trong thang la: ' + (50 * price1 + (elec - 50) * price2));
+//         } else {
+//             alert('So tien dien trong thang la: ' + (50 * price1 + 100 * price2 + (elec - 150) * price3));
+//         }
+//     } else {
+//         alert('Khong hop le');
+//     }
+//
+//     Bai 11
+//     let earn = +prompt('Nhap thu nhap hang thang: ');
+//     if (earn > 0 && earn <10){
+//         alert('Khong phai nop thue');
+//     } else {
+//         alert('So thue phai nop la: ' + (earn * 0.1));
+//     }
+//
+//     Bai 12
+    let money = +prompt('Nhap vao so tien gui: ');
+    let period = +prompt('Nhap vao so ky han: ');
+    let percent = +prompt('Nhap lai suat hang thang: ')
+    let interest = money * percent ** period;
+    if (money > 0 && period >= 0 && percent > 0) {
+        alert('Lai kep sau ' + period + ' thang la: ' + interest);
+    }
+
+</script>
+</body>
+</html>
