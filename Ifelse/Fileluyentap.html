@@ -55,19 +55,31 @@
   //       alert('Khong xep loai');
   //   }
   //   Bai 6
-    let money = +prompt('Nhap vao doanh thu ban hang: ');
-    let percentage1 = 10;
-    let percentage2 = 5;
-    if (money >= 200) {
-        if (money >= 1000) {
-            alert('Hoa hong nhan duoc la ' + percentage1 + '%');
-        }
-        else if (money >= 500) {
-            alert('Hoa hong nhan duoc la ' + percentage2 + '%');
-        }
-    } else {
-        alert('Khong duoc huong hoa hong');
-    }
+  //   let money = +prompt('Nhap vao doanh thu ban hang: ');
+  //   let percentage1 = 10;
+  //   let percentage2 = 5;
+  //   if (money >= 200) {
+  //       if (money >= 1000) {
+  //           alert('Hoa hong nhan duoc la ' + percentage1 + '%');
+  //       }
+  //       else if (money >= 500) {
+  //           alert('Hoa hong nhan duoc la ' + percentage2 + '%');
+  //       }
+  //   } else {
+  //       alert('Khong duoc huong hoa hong');
+  //   }
+  //   Bai 7
+let minutes = +prompt('Nhap vao so phut: ');
+let price1 = 2000;
+let price2 = 1500;
+if (minutes <= 10 && minutes > 0) {
+    alert('Cuoc dien thoai la: ' + minutes * price1);
+}
+else if (minutes > 10) {
+    alert('Cuoc dien thoai la: ' + minutes * price2);
+} else {
+    alert('Khong hop le')
+}
 
 </script>
 </body>
