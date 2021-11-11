@@ -2,48 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Advanced Calculator</title>
+    <title>Máy tính đơn giản</title>
+    <!--    <script src="maytinhdongian.js"></script>-->
     <style>
-        table{
-            border: 1px solid;
-            border-collapse: collapse;
-            padding: 10px 10px 10px 10px;
+        table {
+            width: 400px;
+            height: 600px;
+            border: 5px solid black;
+            text-align: center;
+            margin: auto;
         }
+
+        #dis {
+            width: 100%;
+            height: 25%;
+        }
+
+        #display {
+            height: 50px;
+            font-size: 15px;
+        }
+
         td {
             width: 25%;
-            padding: 5px 5px 5px 5px;
+        }
+
+        td input {
+            width: 80%;
+            height: 70%;
+            font-size: 28px;
         }
     </style>
 </head>
 <body>
-<table>
-    <tr>
-        <td colspan="4"><input type="text" id="dislay"></td>
-    </tr>
-    <tr>
-        <td><input type="button" value="1"></td>
-        <td><input type="button" value="2"></td>
-        <td><input type="button" value="3"></td>
-        <td><input type="button" value="+"></td>
-    </tr>
-    <tr>
-        <td><input type="button" value="4"></td>
-        <td><input type="button" value="5"></td>
-        <td><input type="button" value="6"></td>
-        <td><input type="button" value="-"></td>
-    </tr>
-    <tr>
-        <td><input type="button" value="7"></td>
-        <td><input type="button" value="8"></td>
-        <td><input type="button" value="9"></td>
-        <td><input type="button" value="*"></td>
-    </tr>
-    <tr>
-        <td><input type="button" value="0"></td>
-        <td><input type="button" value="C"></td>
-        <td><input type="button" value="="></td>
-        <td><input type="button" value="/"></td>
-    </tr>
-</table>
+<form>
+    <table>
+        <tr>
+            <th id="dis" colspan="4"><label for="display"></label>
+                <input type="text" value="" id="display" size="45"></th>
+        </tr>
+        <tr>
+            <td><input type="button" name="1" value="1" onclick="showValue(value)"></td>
+            <td><input type="button" name="2" value="2" onclick="showValue(value)"></td>
+            <td><input type="button" name="3" value="3" onclick="showValue(value)"></td>
+            <td><input type="button" name="+" value="+" onclick="showValue(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="4" value="4" onclick="showValue(value)"></td>
+            <td><input type="button" name="5" value="5" onclick="showValue(value)"></td>
+            <td><input type="button" name="6" value="6" onclick="showValue(value)"></td>
+            <td><input type="button" name="-" value="-" onclick="showValue(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="7" value="7" onclick="showValue(value)"></td>
+            <td><input type="button" name="8" value="8" onclick="showValue(value)"></td>
+            <td><input type="button" name="9" value="9" onclick="showValue(value)"></td>
+            <td><input type="button" name="*" value="*" onclick="showValue(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" name="C" value="C"></td>
+            <td><input type="button" name="0" value="0" onclick="showValue(value)"></td>
+            <td><input type="button" name="=" value="=" id="equalSign" onclick="calculator()"></td>
+            <td><input type="button" name="/" value="/" onclick="showValue(value)"></td>
+        </tr>
+    </table>
+</form>
 </body>
+<script>
+    function showValue(value) {
+        document.getElementById("display").value += value
+    }
+
+    function calculator() {
+        let result = eval(document.getElementById("display").value)
+        document.getElementById("display").value = result
+    }
+</script>
 </html>
