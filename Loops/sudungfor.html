@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Sử dụng for</title>
 </head>
 <body>
-$END$
+<!--<h2>Java Script Loops</h2>-->
+<!--<p id = "demo"></p>-->
+<!--Bài 1-->
+<!--<script>-->
+<!--    let text = "";-->
+<!--    for (i = 0; i < 10; i++) {-->
+<!--        text += "The number is " + i + "<br>";-->
+<!--    }-->
+<!--    document.getElementById("demo").innerHTML = text;-->
+<!--</script>-->
+<script>
+    let num = +(prompt('Enter your number: '));
+    let total = 0;
+    let i = 1;
+    for (; i <= num; i++) {
+        total = total + i;
+        alert(total);
+    }
+</script>
 </body>
 </html>
