@@ -16,15 +16,26 @@
     //     }
     // }
     // Bài 2
-    let temp = +prompt("Nhập nhiệt độ người dùng" );
-    if (temp > 100) {
-        alert("Giảm nhiệt độ")
-    }
-    else if (temp < 20) {
-        alert("Tăng nhiệt độ")
-    }
-    else {
-        alert("không hợp lệ")
+    // let temp = +prompt("Nhập nhiệt độ người dùng" );
+    // if (temp > 100) {
+    //     alert("Giảm nhiệt độ")
+    // }
+    // else if (temp < 20) {
+    //     alert("Tăng nhiệt độ")
+    // }
+    // else {
+    //     alert("không hợp lệ")
+    // }
+    // Bài 3
+    let num1 = 0;
+    let num2 = 1;
+    nextNum = num1 + num2;
+    for (let i = 2; i < 20; i++){
+        console.log(nextNum);
+        num1 = num2;
+        num2= nextNum;
+        nextNum = num1 + num2;
+        document.write(nextNum + "<br>");
     }
 </script>
 </body>
