@@ -27,15 +27,66 @@
     //     alert("không hợp lệ")
     // }
     // Bài 3
-    let num1 = 0;
-    let num2 = 1;
-    nextNum = num1 + num2;
-    for (let i = 2; i < 20; i++){
-        console.log(nextNum);
-        num1 = num2;
-        num2= nextNum;
-        nextNum = num1 + num2;
-        document.write(nextNum + "<br>");
+    // let num1 = 0;
+    // let num2 = 1;
+    // nextNum = num1 + num2;
+    // for (let i = 2; i < 20; i++){
+    //     console.log(nextNum);
+    //     num1 = num2;
+    //     num2= nextNum;
+    //     nextNum = num1 + num2;
+    //     document.write(nextNum + "<br>");
+    // }
+    // Bài 4
+    // let n = 1;
+    // let f0 = 0;
+    // let f1 = 1;
+    // let fn;
+    // let nextNum = f0;
+    // while (n > 0) {
+    //     fn = f1 + f0;
+    //     f0 = f1;
+    //     f1 = fn;
+    //     if (f0 % 5 === 0) {
+    //         nextNum = f0;
+    //         break
+    //     }
+    //     n++;
+    // }
+    // document.write(nextNum);
+    // Bài 5
+    // let n = +prompt('Nhập vào số: ')
+    // let f0 = 0;
+    // let f1 = 1;
+    // let fn;
+    // let nextNum = f0;
+    // while (n > 0) {
+    //     nextNum = nextNum + f0;
+    //     fn = f1 + f0;
+    //     f0 = f1;
+    //     f1 = fn;
+    //     n--;
+    // }
+    // document.write('Tổng của các số fibonacci đầu tiên là: ' + nextNum );
+    // Bài 6
+    // let sum = 0;
+    // let i = 0;
+    // for (let i = 1; i <= 30; i++) {
+    //     sum += (i * 7);
+    //     document.write("Tổng của 30 số chia hết cho 7 là: ");
+    // }
+    //
+    // Bài 7
+    for (let i = 1; i <= 100; i++) {
+        if (i % 5 === 0 && i % 3 === 0) {
+            document.write("FizzBuzz" + '<br>');
+        } else if (i % 3 === 0) {
+            document.write("Fizz" + '<br>');
+        } else if (i % 5 === 0) {
+            document.write("Buzz" + '<br>');
+        } else {
+            document.write(i + '<br>');
+        }
     }
 </script>
 </body>
