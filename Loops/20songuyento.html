@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRIMER</title>
+</head>
+<body>
+<script>
+    let ordnum = 1;
+    let num = 2;
+    console.log("20 số nguyên tố đầu tiên là" );
+    for (let i = 1; i <= 20; ) {
+        for (let j =2; j <= Math.sqrt(num); j++) {
+            if (num % j === 0) {
+                ordnum = 0;
+                break;
+            }
+        }
+        if (ordnum !== 0) {
+            console.log(num);
+            i++;
+        }
+        ordnum = 1;
+        num++;
+    }
+</script>
+</body>
+</html>
