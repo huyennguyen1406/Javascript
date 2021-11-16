@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài luyện tập 1</title>
+</head>
+<body>
+<script>
+  // Bài 1
+  let numbers = [-3, 2, 1, 30, 2, 40, 8, 9, 20, 30];
+  let sum = 0;
+  let num1
+  for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] >= 10) {
+          num1 = numbers[i];
+          document.write("Các số lớn hơn 10 trong dãy là: " + num1 + "</br>");
+      }
+  }
+
+  for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] >= 10) {
+          sum = sum + numbers[i];
+      }
+  }
+  document.write("Tổng các số lớn hơn 10 trong dãy là: " + sum);
+</script>
+</body>
+</html>
