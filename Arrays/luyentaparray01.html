@@ -12,17 +12,12 @@
   // let num1
   // for (let i = 0; i < numbers.length; i++) {
   //     if (numbers[i] >= 10) {
-  //         num1 = numbers[i];
-  //         document.write("Các số lớn hơn 10 trong dãy là: " + num1 + "</br>");
-  //     }
-  // }
-  //
-  // for (let i = 0; i < numbers.length; i++) {
-  //     if (numbers[i] >= 10) {
+  //         document.write("Các số lớn hơn 10 trong dãy là: " + numbers[i] + "</br>");
   //         sum = sum + numbers[i];
   //     }
   // }
   // document.write("Tổng các số lớn hơn 10 trong dãy là: " + sum);
+
   //  Bai 2
   // let numbers = [-3, 2, 1, 30, 2, 40, 8, 90, 20, 30];
   // let check = numbers[0];
@@ -32,7 +27,7 @@
   //     }
   // }
   // document.write('Giá trị lớn nhất: ' + check  + ';' + '</br>' + ' vị trị thứ :'+ numbers.indexOf(check))
-  //
+  //có thể xuất hiện trường hợp đặc biệt là 2 số 90 trong dãy => tìm cách xử lý
   // Bai 3
   // let arrays = [3, 4, 2, 30, 7, 8, 10, 15, 16];
   // let sum = arrays[0];
@@ -43,7 +38,7 @@
   //         check = arrays[i];
   //     }
   // }
-  // document.write('Maximum is: ' + check + '; Sum is : ' + (sum/arrays.length));
+  // document.write('Maximum is: ' + check + '; Avg is : ' + (sum/arrays.length));
   //
   // Bai 4
   // let array1 = [3, 4, 2, 30, 7, 8, 10, 15, 16];
@@ -54,7 +49,7 @@
   // document.write('Hàm đảo ngược là: ' + array2);
   //
   // Bài 5
-  // let arrays = [3, -2, 5, -6, 8, -10, 14, 23];
+  // let arrays = [3, -2, -1.4, 5, -6, 8, -10, 14, 23];
   // let soAm = 0;
   // for(i = 0; i < arrays.length; i++) {
   //     if (arrays[i] % 1 === 0 && arrays[i] < 0) {
@@ -62,28 +57,34 @@
   //     }
   // } document.write('Số âm trong chuỗi là: ' + soAm);
   //
-  // Bài 6
-  // let value1 = prompt("Enter a number: ");
+  // Bài 6 => Kỹ thuật sử dụng biến cờ (biến dạng boolean) flag
+  // let value1 = +prompt("Enter a number: ");
   // let numbers = [-3, 5, 1, 3, 2, 6, 10, 13];
+  // let valueIsInNum = false;
   // for (let i = 0; i < numbers.length; i++) {
   //     if (value1 == numbers[i]) {
-  //         alert('V is in the array');
-  //     } else {
-  //         alert('V is not in the array');
+  //         valueIsInNum = true;
+  //         break;
   //     }
+  // }
+  // if (valueIsInNum == true) {
+  //     alert("V is in the array");
+  // } else {
+  //     alert("V is not in the array");
   // }
   //
   // Bài 8
   // let arr = [30, 100, 55, 6, 8, 18, 22, 23];
-  // let arr1 = (a, b) => b - a;
+  // let arr1 = (a, b) => b - a; => Hàm lambda
   // arr.sort(arr1)
   // console.log(arr);
-  //
+  // => làm lại
   // Bài 9
   let a = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
   let b = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
   let c = a.concat(b);
-  console.log(c);
+  alert(c)
+  // console.log(a);
 
 </script>
 </body>
