@@ -65,20 +65,23 @@
 
   let number1 = [-3, 2, 1, 'a', 3, 40, 8, 50, 20, 30];
   let number2 = [-3, 2, 1, 'a', 3, 40, 8, 50, 20, 30];
-  let flag = false;
+  let flag = true;
   for (let i = 0; i < number1.length; i++) {
-      if (number1[i] === number2[i]) {
-          flag = true;
-      } else {
+      if (number1[i] !== number2[i]) {
           flag = false;
-          break
+          break;
       }
   }
-  if (flag) {
-      alert("2 arrays giống nhau")
-  } else {
+  if (flag == false) {
       alert("2 arrays khác nhau")
+  } else {
+      alert("2 arrays giống nhau")
   }
+  // if (flag) {
+  //     alert("2 arrays giống nhau")
+  // } else {
+  //     alert("2 arrays khác nhau")
+  // }
 
 </script>
 </body>
