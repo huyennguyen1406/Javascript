@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DICTIONARY</title>
+</head>
+<body>
+<label for="input">Nhập vào 1 chuỗi kí tự</label>
+<br>
+<input id="input" type="text">
+<br>
+<button type="button" onclick="check()">Click to translate</button>
+<p id="display"></p>
+
+<script>
+    let eng = ['apple', 'banana', 'coconut', 'orange', 'grape', 'pear', 'waterlemon', 'avocado', 'peach', 'durian'];
+    let vna = ['táo', 'chuối', 'dừa', 'cam', 'nho', 'lê', 'dưa hấu', 'bơ', 'đào', 'sầu riêng'];
+
+    function check() {
+        let str = document.getElementById('input').value;
+        let flag = false;
+        let index;
+        for (let i = 0; i < eng.length; i++) {
+            if (eng[i] === str) {
+                flag = true;
+                index = vna[i];
+                break
+            } if (vna[i] === str) {
+                flag = true;
+                index = eng[i];
+                break
+            }
+        }
+        if (flag) {
+            document.getElementById('display').innerHTML = index;
+        } else
+            document.getElementById('display').innerHTML = "Không tìm thấy !!!"
+    }
+
+
+</script>
+</body>
+</html>
