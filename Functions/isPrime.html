@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kiểm tra số nguyên tố</title>
+    <title>Check is Prime</title>
 </head>
 <body>
 <script>
-    let num1 = +prompt("Nhập vào số cần xét: ");
-    function isPrime(n) {
-        if (n <= 1)
+    let number = +prompt("Enter number to check: ");
+    function isPrime(num) {
+        if (num < 2) {
             return false;
-        if(n % 2 == 0 && n > 2)
-            return false;
-        const s = Math.sqrt(n);
-        for (let i = 3; i <= s; i += 2){
-            if(n % i === 0)
-                return false;
+        } else  {
+            for (let i = 2; i <= Math.sqrt(num); i++){
+                if(num % i === 0) {
+                    return false;
+                }
+            }
         }
         return true;
     }
-    alert()
+    if (isPrime(number)){
+        alert(number + " is Prime")
+    } else {
+        alert(number + " is not Prime")
+    }
 </script>
 </body>
 </html>
