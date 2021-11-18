@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm check đối xứng</title>
+</head>
+<body>
+<script>
+    let str = "abcdcba";
+    let arr = str.split("");
+    let count = 0;
+
+    function isPalindrome(arr, count) {
+        if (arr[count] !== arr[arr.length - 1 - count]) {
+            return false;
+        } else if (count <= arr.length / 2) {
+            return isPalindrome(arr, count + 1)
+        }
+        return true
+    }
+console.log(isPalindrome(arr,count));
+</script>
+</body>
+</html>

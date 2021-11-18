@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập Functions 02</title>
+</head>
+<body>
+<!--Bài 1-->
+<!--<script>-->
+<!--    let input = +prompt("Nhập vào một số: ");-->
+<!--    alert("Bình phương của " + input + " là " + square(input));-->
+
+<!--    function square(num) {-->
+<!--        return num ** 2;-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 2-->
+<!--<script>-->
+<!--    let radius = +prompt("Nhập vào bán kính hình tròn: ");-->
+
+<!--    function circumference(r) {-->
+<!--        return r * 2 * 3.14;-->
+<!--    }-->
+
+<!--    function areaCircle(r) {-->
+<!--        return r ** 2 * 3.14;-->
+<!--    }-->
+<!--    alert("Chu vi hình tròn là: " + circumference(radius));-->
+<!--    alert("Diện tích hình tròn là: " + areaCircle(radius));-->
+<!--</script>-->
+
+<!--Bài 3-->
+<!--<script>-->
+<!--    let input = +prompt("Nhập vào 1 số: ");-->
+
+<!--    if (input >= 0){-->
+<!--        alert("Giai thừa của số " + input + " là: " + factorial(input));-->
+
+<!--    }else {-->
+<!--        alert("Không tính giai thừa cho số âm!")-->
+<!--    }-->
+
+<!--    function factorial(num){-->
+<!--        if (num===1 || num===0){-->
+<!--            return 1;-->
+<!--        }else{-->
+<!--            return num * factorial(num-1);-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 4-->
+<!--<script>-->
+<!--    let input = prompt("Nhập một kí tự:");-->
+
+<!--    if(isNumber(input)){-->
+<!--        alert("Ký tự nhập vào là số")-->
+<!--    }else {-->
+<!--        alert("Ký tự nhập vào không phải là số")-->
+<!--    }-->
+
+<!--    function isNumber(value){-->
+<!--        if (value < 0 || value >= 0){-->
+<!--            return true;-->
+<!--        }else {-->
+<!--            return false;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 5-->
+<!--<script>-->
+<!--    let number1 = +prompt("Nhập vào số thứ nhất: ");-->
+<!--    let number2 = +prompt("Nhập vào số thứ hai: ");-->
+<!--    let number3 = +prompt("Nhập vào số thứ ba: ");-->
+
+<!--    function findMin (num1, num2, num3) {-->
+<!--        let min = num1;-->
+<!--        if (min > num2) {-->
+<!--            min = num2;-->
+<!--        }-->
+<!--        if (min > num3) {-->
+<!--            min = num3;-->
+<!--        }-->
+<!--        return min;-->
+<!--    }-->
+<!--    alert("Số nhỏ nhất trong 3 số là: " + findMin(number1, number2, number3))-->
+<!--</script>-->
+
+<!--Bài 6-->
+<script>
+    let input = +prompt("Nhập vào một số: ")
+
+    function isPositive(num) {
+        if (num >= 0) {
+            return true
+        } else {
+            return false
+        }
+    }
+    if (isPositive(input)) {
+        alert("Đó là số nguyên dương")
+    } else {
+        alert("Không phải số nguyên dương")
+    }
+</script>
+</body>
+</html>
