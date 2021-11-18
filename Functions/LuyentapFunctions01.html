@@ -12,7 +12,66 @@
 <!--        alert("Xin chao");-->
 <!--    }-->
 <!--</script>-->
-<!--Bai 2-->
 
+<!--Bai 2-->
+<!--<p>Nhập vào một số a:</p>-->
+<!--<input type="text" id ="input" oninput="inputChange(+this.value)">-->
+<!--<p>Số a tăng lên 1 là: <span id="display"></span></p>-->
+<!--<script>-->
+<!--    function inputChange(num){-->
+<!--        document.getElementById("display").innerText = num+1;-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 3-->
+<!--<script>-->
+<!--    let number1 = +prompt("Nhập vào số thứ nhất: ");-->
+<!--    let number2 = +prompt("Nhập vào số thứ hai: ");-->
+
+<!--    alert(compareNumber(number1,number2));-->
+<!--    function compareNumber(num1,num2){-->
+<!--        if (num1 > num2){-->
+<!--            return ("Số "+ num1 +" lớn hơn "+num2);-->
+<!--        }else {-->
+<!--            return ("Tổng hai số "+num1 +" và " + num2 + " là: " +(num1+num2));-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 4-->
+<script>
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+    result = 0;
+    alert(result);
+    result = addNumbers();
+    alert(result);
+</script>
+
+Bài 5
+<script>
+    let arr1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let arr2 = ["Ursa Minor","Tarurus","Cygnus","Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    let input = prompt("Nhập vào tên ngôi sao: ");
+    findStart(input);
+
+    function findStart(startName){
+        let check = false;
+        for (let i = 0; i < arr1.length; i++) {
+            if (startName === arr1[i]){
+                alert("Chòm sao: "+arr2[i]);
+                check = true
+            }
+        }
+        if (!check){
+            alert("Không có tên ngôi sao trong mảng!");
+        }
+    }
+</script>
 </body>
 </html>
