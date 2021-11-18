@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUẢN LÝ SẢN PHẨM</title>
+
+</head>
+<style>
+    table tr td {
+        border: cadetblue 1px solid;
+    }
+</style>
+<body>
+<h1>Danh sách sản phẩm</h1>
+<input type="newPr" placeholder="NewProduct">
+<!--<button onclick="showAllProduct()">Show</button>-->
+<button onclick="createrNewProduct()">Create</button>
+<p id="sumProduct"></p>
+<table>
+    <tr>
+        <th>Tên sản phẩm</th>
+        <th>Sửa</th>
+        <th>Xóa</th>
+    </tr>
+    <tbody id="products">
+        <tr>
+            <td>Macbook</td>
+            <td>Sửa</td>
+            <td>Xóa</td>
+        </tr>
+        <tr>
+            <td>Dell</td>
+            <td>Sửa</td>
+            <td>Xóa</td>
+        </tr>
+        <tr>
+            <td>HP</td>
+            <td>Sửa</td>
+            <td><button onclick="deleteProduct()">Xóa</button></td>
+        </tr>
+    </tbody>
+
+</table>
+<script src="quanLySP.js"></script>
+</body>
+</html>
