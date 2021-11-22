@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Phone</title>
+</head>
+<body>
+<script>
+    class MobilePhone {
+        name
+        battery
+        constructor(nam, battery) {
+            this.name = name;
+            this.battery = battery;
+            this.message = "";
+            this.draftBox = [];
+            this.inBox = [];
+            this.sendBox = [];
+            this.status = false;
+        }
+
+        turnOn() { //bat may
+            this.status = true;
+        }
+        turnOff() { //tat may
+            this.status = false;
+        }
+        getStatus() {
+            return this.status;
+        }
+        checkBattery() { //check pin
+            return this.battery > 0 ? true: false;
+        }
+        chargeBattery(battery) {
+            return this.battery = battery;
+        }
+        //chuc nang
+        setMess(message) {
+            if(this.checkBattery()&& this.getStatus()) {
+                this.inBox = this.inBox.concat(message);
+                this.battery--;
+            }
+        }
+        sendMess(phone) {
+            if (this.checkBattery()&& this.getStatus() && phone.getStatus()) {
+                this.battery--;
+                phone.setInbox(this.draftBox);
+                this.sendBox = this.sendBox.concat(this.draftBox);
+                this.draftBox = [];
+            }
+        }
+    }
+
+    let iphone = new MobilePhone("iphone", 100);
+</script>
+</body>
+</html>
