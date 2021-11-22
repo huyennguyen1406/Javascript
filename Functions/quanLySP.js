@@ -1,4 +1,4 @@
-let productList = ["Iphone 12", "Iphone 13", "Iphone X", "Ipad", "Airpod Pro", "Iphone 11"];
+let productList = ["Iphone 12", "Iphone 13", "Iphone X", "Iphone 11", "Ipad", "Airpod Pro"];
 
 function showAllProduct() {
     let content = "";
