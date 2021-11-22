@@ -29,12 +29,22 @@
         this.setYear = function (year) {
             this.year = year;
         }
+        this.setDate = function (day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        this.toString = function () {
+            alert(this.day + "/" + this.month + "/" + this.year)
+        }
     };
     let date = new MyDate (10, 10, 2019);
     let day = date.getDay();
     let month = date.getMonth();
     let year = date.getYear();
-    alert(day + "/" + month + "/" + year);
+    // alert(day + "/" + month + "/" + year);
+    date.toString()
 
 </script>
 </body>
