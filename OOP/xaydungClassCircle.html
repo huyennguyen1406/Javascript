@@ -5,7 +5,19 @@
     <title>Xay dung lop hinh tron</title>
 </head>
 <body>
+<canvas id="myCanvas" width="1368px" height="700px" style="border:1px solid #d3d3d3;"></canvas>
 <script>
+    class Circle {
+        x
+        y
+        radius
+
+        constructor(x, y, radius) {
+            this.x = x
+            this.y = y
+            this.radius = radius
+        }
+
     let Circle = function (radius) {
         this.radius = radius;
         this.getRadius = function () {
@@ -15,11 +27,12 @@
             return Math.PI * radius *radius;
         }
     }
+
     let circle = new Circle(2);
     let radius = circle.getRadius();
     let area = circle.getArea();
     alert("radius: " + radius + "; area: " + area);
-
+}
 </script>
 </body>
 </html>

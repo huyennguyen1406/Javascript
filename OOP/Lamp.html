@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lamp</title>
+</head>
+<body>
+<script>
+    class Lamp {
+        status
+
+        constructor(status) {
+            this.status = status;
+        }
+        getStatus() {
+            return this.status;
+        }
+        turnOn() {
+            this.status = true;
+            console.log("Light on");
+        }
+        turnOff() {
+            this.status = false;
+            console.log("Light out");
+        }
+    }
+
+    class Button {
+        lamp
+        status
+        constructor(status) {
+            this.status = status;
+        }
+        connectToLamp (lamp) {
+            this.lamp = lamp;
+        }
+        buttonOn() {
+            if (this.lamp === undefined) {
+                console.log("Connect to lamp");
+            } else {
+                this.status = false;
+                this.lamp.turnOff();
+            }
+        }
+    }
+
+    let button = new Button(false);
+    let lamp = new Lamp(false)
+</script>
+</body>
+</html>
