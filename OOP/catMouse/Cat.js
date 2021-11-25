@@ -1,25 +1,32 @@
 class Cat {
-    name
-    weight
-    maxSpeed
-    sound
-    constructor(name, weight, maxSpeed, sound) {
+    name;
+    weight;
+    speed;
+    constructor(name, weight, speed) {
         this.name = name;
-        this.weight = weight;
-        this.maxSpeed = maxSpeed;
-        this.sound = sound;
-    }
-    setName(name) {
-        this.name = name;
-    }
-    setWeight(weight) {
+        this.speed = speed;
         this.weight = weight;
     }
-    setMaxSpeed(maxSpeed) {
-        this.maxSpeed = maxSpeed;
+    setSpeed(speed){
+        this.speed = speed;
     }
-    setSound(sound) {
-        this.sound = sound;
+    setWeight(weight){
+        this.weight = weight;
+    }
+    setName(name){
+        this.name = name;
+    }
+    getSpeed(){
+        return this.speed;
+    }
+    getWeight(){
+        return this.weight;
+    }
+    getName(){
+        return this.name;
+    }
+    sound(){
+        console.log("Meow meow")
     }
 
 }
